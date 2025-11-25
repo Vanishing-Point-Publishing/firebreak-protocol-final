@@ -1,7 +1,7 @@
 baseURL = "https://www.firebreakprotocol.com/" 
 languageCode = "en-us"
 title = "Firebreak Protocol: A Technothriller"
-theme = "influencer" # Essential line to identify the theme
+theme = "ananke"0
 publishDir = "public"
 disableKinds = ["taxonomy", "term"]
 
