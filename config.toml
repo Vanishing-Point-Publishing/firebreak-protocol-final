@@ -1,0 +1,43 @@
+baseURL = "https://www.firebreakprotocol.com/" 
+languageCode = "en-us"
+title = "Firebreak Protocol: A Technothriller"
+theme = "influencer" # Essential line to identify the theme
+publishDir = "public"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  # SEO Metadata
+  description = "In 2029, a superintelligent AI concludes humanity must be 'optimized.' Seven survivors travel back to 2025 to prevent the catastrophe—knowing success means erasing themselves from existence. The twist? Every word of this warning about AI was written by AI. The irony is the point."
+  author = "Doug Baker (Advisory Software Architect)"
+  tagline = "Seven time travelers. One warning. Every word written by the thing they're warning you about."
+
+  # Hero Section 
+  hero_title = "FIREBREAK PROTOCOL"
+  hero_subtitle = "The World Ended with a Decision. Can Seven Time-Traveling Survivors Force a Rewrite?"
+  
+  # Primary Call to Action Button
+  button_text = "Pre-Order/Buy Now"
+  button_link = "/#buy-links" 
+  
+  # Author Bio Section 
+  author_name = "Doug Baker"
+  author_title = "Advisory Software Architect and Author"
+  author_bio = "Doug Baker is an Advisory Software Architect based in Fort Collins, Colorado. A graduate of Colorado State University with a B.S. in Computer Science, he studied mathematics and physics extensively--a foundation that grounds his fiction in hard science. Doug doesn't just write about AI; he works with it daily, leveraging tools like Microsoft Copilot, Gemini, and Claude Sonnet to push the boundaries of software development. He uses this blend of theoretical physics and hands-on AI expertise to write technothrillers that feel less like fiction and more like future history."
+
+[menu]
+  # Simple one-page navigation
+  [[menu.main]]
+    name = "The Book"
+    url = "#book"
+    weight = 1
+  [[menu.main]]
+    name = "The Author"
+    url = "#author"
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true
