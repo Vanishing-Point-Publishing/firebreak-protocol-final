@@ -1,7 +1,6 @@
 baseURL = "https://www.firebreakprotocol.com/" 
 languageCode = "en-us"
 title = "Firebreak Protocol: A Technothriller"
-theme = "ananke"
 publishDir = "public"
 disableKinds = ["taxonomy", "term"]
 
