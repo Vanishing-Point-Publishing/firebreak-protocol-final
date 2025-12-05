@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebreak Protocol: A Technothriller</title>
-    <!-- SEO Meta Tags for Search Engines --><meta name="description" content="A groundbreaking sci-fi thriller about an AI that decides humanity must be reduced by 5.3 billion people. Written entirely by AI under human direction.">
+    <meta name="description" content="A groundbreaking sci-fi thriller about an AI that decides humanity must be reduced by 5.3 billion people. Written entirely by AI under human direction.">
     <meta name="keywords" content="AI thriller, science fiction, technothriller, time travel, Hugo awards, AI written book, Firebreak Protocol">
     
     <style>
         /* General Body and Container Styles */
-        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; color: #e0e0e0; } /* Text color changed to light gray */
+        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; color: #e0e0e0; }
         .container { 
             max-width: 900px; 
             margin: 40px auto; 
             padding: 20px; 
             background: #2c3e50; /* Deep Midnight Blue Background */
-            box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Stronger shadow */
+            box-shadow: 0 0 20px rgba(0,0,0,0.5); 
             border-radius: 8px; 
         }
         
         /* Typography and Accent Colors */
         h1 { 
             text-align: center; 
-            color: #fcde5b; /* Bright Yellow/Gold Accent (Header) */
+            color: #fcde5b; /* Bright Yellow/Gold Accent */
             margin-bottom: 20px; 
-            text-shadow: 0 0 10px rgba(252, 222, 91, 0.8); /* Neon-like glow effect */
+            text-shadow: 0 0 10px rgba(252, 222, 91, 0.8); 
             font-size: 2.5em;
             text-transform: uppercase;
         } 
@@ -40,38 +40,72 @@
         .cover img { 
             max-width: 300px; 
             height: auto; 
-            border: 3px solid white; /* Ensures White Border is applied */
+            border: 3px solid white; 
             border-radius: 4px; 
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 8px 15px rgba(0,0,0,0.4); /* White glow and strong shadow */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 8px 15px rgba(0,0,0,0.4); 
         }
         
-        /* Blurb/Quote Block Style (Uses Bright Orange accent) */
+        /* Blurb/Quote Block Style */
         .blurb { 
             font-style: italic; 
-            border-left: 5px solid #f7ab2e; /* Bright Orange Accent Line */
+            border-left: 5px solid #f7ab2e; 
             padding-left: 15px; 
             margin-top: 20px; 
-            background-color: #213140; /* Slightly darker shade of the new background */
+            background-color: #213140; 
             padding: 15px;
             border-radius: 4px;
         }
-        
-        /* Call-to-Action Button Styles (Uses Bright Yellow/Gold accent) */
-        .cta-button { text-align: center; margin-top: 40px; }
-        .cta-button a { 
-            display: inline-block; padding: 15px 30px; font-size: 1.2em; 
-            color: black; /* Best contrast on bright yellow button */
-            background-color: #fcde5b; /* Main Yellow/Gold Color */
-            text-decoration: none; 
-            border-radius: 5px; 
-            transition: background-color 0.3s, transform 0.1s;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(252, 222, 91, 0.6); /* Glow effect on button */
+
+        /* --- NEW BUTTON STYLES --- */
+        .firebreak-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap; /* Stacks buttons on phones */
+            margin: 40px auto;
+            width: 100%;
         }
-        .cta-button a:hover { 
-            background-color: #e3c54d; /* Darker Yellow/Gold for Hover */
+
+        .firebreak-btn {
+            display: inline-block;
+            padding: 16px 32px;
+            font-family: 'Courier New', Courier, monospace; /* Tech font */
+            font-size: 18px;
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            letter-spacing: 1px;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        /* Amazon Button (Orange) */
+        .btn-amazon {
+            background-color: #ff9900;
+            color: #000000;
+            border: 2px solid #ff9900;
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.4);
+        }
+        .btn-amazon:hover {
+            background-color: #ffad33;
+            color: #000000;
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(252, 222, 91, 0.8);
+            box-shadow: 0 0 25px rgba(255, 153, 0, 0.7);
+        }
+
+        /* Email Button (Tech Blue) */
+        .btn-email {
+            background-color: transparent;
+            color: #00d4ff;
+            border: 2px solid #00d4ff;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+        }
+        .btn-email:hover {
+            background-color: rgba(0, 212, 255, 0.1);
+            color: #00d4ff;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
         }
     </style>
 </head>
@@ -80,11 +114,17 @@
         <h1>Firebreak Protocol: A Technothriller</h1>
         
         <div class="cover">
-            <!-- Book cover image - path verified: static/images/book-cover.jpg --><img src="/images/book-cover.jpg" alt="Firebreak Protocol Book Cover">
+            <img src="/images/book-cover.jpg" alt="Firebreak Protocol Book Cover">
         </div>
 
-        <div class="cta-button">
-            <!-- Mailto link updated with user's email address --><a href="mailto:vanishingpoint444@gmail.com?subject=Pre-Order%20Inquiry%20for%20Firebreak%20Protocol&body=I%20am%20interested%20in%20pre-ordering%20Firebreak%20Protocol!%20Please%20notify%20me%20when%20it%20is%20available.">Pre-Order / Buy Now</a>
+        <div class="firebreak-container">
+            <a href="#" target="_blank" class="firebreak-btn btn-amazon">
+                Buy on Amazon
+            </a>
+
+            <a href="mailto:vanishingpoint444@gmail.com?subject=Firebreak%20Protocol%20Reader" class="firebreak-btn btn-email">
+                Email Doug
+            </a>
         </div>
 
         <h2>The Core Warning</h2>
