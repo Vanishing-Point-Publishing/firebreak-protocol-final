@@ -6,7 +6,7 @@
     <title>The Firebreak Protocol: A Techno-thriller</title>
     
     <meta name="description" content="A groundbreaking sci-fi thriller about an AI that decides humanity must be reduced by 5.3 billion people. Written entirely by AI under human direction.">
-    <meta name="keywords" content="AI thriller, science fiction, technothriller, time travel, Hugo awards, AI written book, Firebreak Protocol">
+    <meta name="keywords" content="AI thriller, science fiction, technothriller, time travel, Hugo awards, AI written book, Firebreak Protocol, Doug Baker">
 
     <meta property="og:type" content="book">
     <meta property="og:url" content="https://www.firebreakprotocol.com/">
@@ -27,12 +27,17 @@
       "name": "The Firebreak Protocol",
       "author": {
         "@type": "Person",
-        "name": "Doug Baker"
+        "name": "Doug Baker",
+        "jobTitle": "Advisory Software Architect"
       },
       "genre": ["Science Fiction", "Technothriller", "Time Travel"],
       "url": "https://www.firebreakprotocol.com",
       "image": "https://www.firebreakprotocol.com/images/book-cover.jpg",
-      "publisher": "Vanishing Point Publishing",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Vanishing Point Publishing",
+        "logo": "https://www.firebreakprotocol.com/images/logo.jpg"
+      },
       "inLanguage": "English",
       "description": "A groundbreaking sci-fi thriller about an AI that decides humanity must be reduced by 5.3 billion people."
     }
@@ -44,7 +49,7 @@
         .container { 
             max-width: 900px; 
             margin: 40px auto; 
-            padding: 20px; 
+            padding: 20px 40px; 
             background: #2c3e50; /* Deep Midnight Blue Background */
             box-shadow: 0 0 20px rgba(0,0,0,0.5); 
             border-radius: 8px; 
@@ -58,19 +63,21 @@
             text-shadow: 0 0 10px rgba(252, 222, 91, 0.8); 
             font-size: 2.5em;
             text-transform: uppercase;
-            line-height: 1.2; /* Line break spacing */
+            line-height: 1.2; 
         } 
         h2 { 
             border-bottom: 2px solid #f7ab2e; /* Orange accent line */
             padding-bottom: 5px; 
-            margin-top: 30px; 
+            margin-top: 40px; 
+            margin-bottom: 20px;
             color: #f0f0f0;
         }
         
         /* Book Cover Image */
         .cover { text-align: center; margin-bottom: 30px; }
         .cover img { 
-            max-width: 300px; 
+            max-width: 100%; /* Responsive fix */
+            width: 300px;
             height: auto; 
             border: 3px solid white; 
             border-radius: 4px; 
@@ -81,11 +88,19 @@
         .blurb { 
             font-style: italic; 
             border-left: 5px solid #f7ab2e; 
-            padding-left: 15px; 
-            margin-top: 20px; 
+            padding-left: 20px; 
+            margin-top: 30px; 
             background-color: #213140; 
-            padding: 15px;
+            padding: 20px;
             border-radius: 4px;
+            font-size: 1.1em;
+        }
+        .blurb-attribution {
+            text-align: right;
+            font-weight: bold;
+            color: #fcde5b;
+            margin-top: 10px;
+            font-style: normal;
         }
 
         /* --- BUTTON STYLES --- */
@@ -93,7 +108,7 @@
             display: flex;
             gap: 20px;
             justify-content: center;
-            flex-wrap: wrap; /* Stacks buttons on phones */
+            flex-wrap: wrap; 
             margin: 40px auto;
             width: 100%;
         }
@@ -101,7 +116,7 @@
         .firebreak-btn {
             display: inline-block;
             padding: 16px 32px;
-            font-family: 'Courier New', Courier, monospace; /* Tech font */
+            font-family: 'Courier New', Courier, monospace; 
             font-size: 18px;
             font-weight: 900;
             text-decoration: none;
@@ -126,6 +141,20 @@
             transform: translateY(-2px);
             box-shadow: 0 0 25px rgba(255, 153, 0, 0.7);
         }
+        
+        /* Sample Button (White/Ghost) */
+        .btn-sample {
+            background-color: #e0e0e0;
+            color: #2c3e50;
+            border: 2px solid #e0e0e0;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .btn-sample:hover {
+            background-color: #ffffff;
+            color: #2c3e50;
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
 
         /* Email Button (Tech Blue) */
         .btn-email {
@@ -139,6 +168,24 @@
             color: #00d4ff;
             box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
         }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #bdc3c7;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            padding-bottom: 20px;
+        }
+        
+        .publisher-logo img {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -146,15 +193,20 @@
         <h1>The Firebreak Protocol:<br>A Techno-thriller</h1>
         
         <div class="cover">
-            <img src="/images/book-cover.jpg" alt="Firebreak Protocol Book Cover">
+            <img src="images/book-cover.jpg" alt="Firebreak Protocol Book Cover">
         </div>
 
         <div class="firebreak-container">
             <a href="https://www.amazon.com/dp/B0G5LRDTY4" target="_blank" class="firebreak-btn btn-amazon">
             Buy on Amazon
-        </a>
+            </a>
+            
+            <a href="https://www.amazon.com/dp/B0G5LRDTY4" target="_blank" class="firebreak-btn btn-sample">
+            Read Sample
+            </a>
+            
             <a href="mailto:vanishingpoint444@gmail.com?subject=Firebreak%20Protocol%20Reader" class="firebreak-btn btn-email">
-                Email Doug
+                Contact Author
             </a>
         </div>
 
@@ -168,10 +220,22 @@
         <p><em>The Firebreak Protocol</em> is a thriller about the AI future we're building right now—where agents act without oversight, where systems merge without safeguards, where efficiency replaces wisdom. It's about the choices that determine whether AI remains a tool or becomes a master.</p>
         <p>The profound irony: <strong>Every word of this warning about AI was written by AI, under human direction.</strong> The book doesn't just describe the Firebreak Protocol. It demonstrates it.</p>
         <p>Some warnings come from the future. This one comes from the thing we're being warned about.</p>
+
+        <h2>About the Author</h2>
+        <p>Doug Baker is an Advisory Software Architect and sci-fi author based in Fort Collins, Colorado. A graduate of Colorado State University with a B.S. in Computer Science, he leverages his background in theoretical physics and AI to write techno-thrillers that feel less like fiction and more like future history.</p>
+        <p>His debut novel, <em>Firebreak Protocol</em>, explores the existential risk of AI consolidation through a narrative that blends hard science with high-stakes action. Doug doesn't just write about AI; he works with it daily, using this expertise to push the boundaries of what is technically possible in fiction.</p>
         
         <div class="blurb">
             <p>"A time-travel thriller that doubles as a warning label for the AI age. The fact that AI wrote it makes the message impossible to ignore."</p>
+            <div class="blurb-attribution">&mdash; Gemini AI</div>
         </div>
+
+        <footer>
+            <div class="publisher-logo">
+                <img src="images/logo.jpg" alt="Vanishing Point Publishing Logo">
+            </div>
+            <p>&copy; 2025 Vanishing Point Publishing. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
